@@ -41,10 +41,22 @@ export function SiteFooter() {
                 Legal
               </div>
               <div className="mt-[20px] text-[17px] text-[#6D6D6D]">
-                <Link href="#">Política de privacidad</Link>
+                <a
+                  href="/Política de Privacidad.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Política de privacidad
+                </a>
               </div>
               <div className="mt-[17px] text-[17px] text-[#6D6D6D]">
-                <Link href="#">Términos y condiciones</Link>
+                <a
+                  href="/TÉRMINOS Y CONDICIONES DE USO.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Términos y condiciones
+                </a>
               </div>
             </div>
           </div>

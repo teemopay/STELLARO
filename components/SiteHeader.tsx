@@ -8,8 +8,11 @@ import { Logo } from "@/components/Logo";
 const links = [
   { href: "/", label: "Página principal" },
   { href: "/contact", label: "Contáctenos" },
-  { href: "#", label: "Política de privacidad" },
-  { href: "#", label: "Términos y condiciones" },
+  { href: "/Política de Privacidad.pdf", label: "Política de privacidad" },
+  {
+    href: "/TÉRMINOS Y CONDICIONES DE USO.pdf",
+    label: "Términos y condiciones",
+  },
 ];
 
 export function SiteHeader() {
@@ -54,6 +57,10 @@ export function SiteHeader() {
               className={`text-[17px] font-semibold transition-colors hover:text-[#0069AB] ${pathname === link.href ? "text-[#0069AB]" : "text-[#3D3D3D]"}`}
               key={link.label}
               href={link.href}
+              target={link.href.endsWith(".pdf") ? "_blank" : undefined}
+              rel={
+                link.href.endsWith(".pdf") ? "noopener noreferrer" : undefined
+              }
               onClick={() => setIsMenuOpen(false)}
             >
               {link.label}

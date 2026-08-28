@@ -101,12 +101,13 @@ export default function Home() {
               Solicita tu préstamo en línea y descubre una alternativa de
               financiamiento adaptada a tus necesidades.
             </TextReveal>
-            <TextReveal
-              as="div"
-              delay={0.8}
-              className="font-heading home-btn mt-[107px] flex items-center justify-center text-[25px] text-white cursor-pointer"
-            >
-              Solicitar ahora
+            <TextReveal as="div" delay={0.8} className="mt-[107px]">
+              <Link
+                className="font-heading home-btn flex items-center justify-center text-[25px] text-white cursor-pointer"
+                href="/contact"
+              >
+                Solicitar ahora
+              </Link>
             </TextReveal>
           </div>
           <Image
@@ -121,7 +122,7 @@ export default function Home() {
       <section className="bg-[#F5FBFF] pt-[120px] pb-[106px] px-[20px] md:px-10">
         <div className="mx-auto  max-w-[1070px]">
           <TextReveal className="font-heading text-[48px] text-[#3D3D3D] leading-[58px] font-normal text-center">
-            <span className="title-highlight">Solicitar es más fácil</span> qde
+            <span className="title-highlight">Solicitar es más fácil</span> de
             lo que imaginas
           </TextReveal>
           <div className="mt-[74px] lg:grid w-full  lg:grid-cols-[minmax(0,510px)_1fr] lg:gap-x-[40px] xl:gap-x-[89px]">
@@ -339,9 +340,12 @@ export default function Home() {
               Haz tu solicitud en línea y conoce las condiciones disponibles
               para ti.
             </div>
-            <div className="font-heading home-btn mt-[94px] flex items-center justify-center text-[25px] text-white cursor-pointer">
+            <Link
+              className="font-heading home-btn mt-[94px] flex items-center justify-center text-[25px] text-white cursor-pointer"
+              href="/contact"
+            >
               Solicitar ahora
-            </div>
+            </Link>
           </GsapReveal>
           <GsapReveal direction="right">
             <Image
