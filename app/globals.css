@@ -291,8 +291,5 @@ input {
   content: "";
   width: 254px;
   height: 61px;
-  background: #0084d4;
-  border-radius: 0px 0px 0px 0px;
-  opacity: 0.2;
-  filter: blur(42px);
+  background: url("/img/10.png") center / cover no-repeat;
 }
