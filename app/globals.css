@@ -273,9 +273,26 @@ input {
   top: 19px;
 }
 .home-btn {
+  position: relative;
+  z-index: 0;
+  isolation: isolate;
   width: 266px;
   height: 72px;
   background: linear-gradient(154deg, #c0eaff 0%, #02a0ff 100%);
   box-shadow: -8px 8px 30px 0px rgba(0, 0, 0, 0.06);
-  border-radius: 13px 13px 13px 13px;
+  border-radius: 13px;
+}
+
+.home-btn::after {
+  position: absolute;
+  left: 12px;
+  top: 36px;
+  z-index: -1;
+  content: "";
+  width: 254px;
+  height: 61px;
+  background: #0084d4;
+  border-radius: 0px 0px 0px 0px;
+  opacity: 0.2;
+  filter: blur(42px);
 }
